@@ -1,51 +1,5 @@
-\documentclass{cv}
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-\usepackage[utf8]{inputenc}
-\usepackage{enumitem}
-%\usepackage[
-%backend=biber,
-%maxnames=99,
-%style=authoryear
-%]{biblatex}
-\usepackage{bibentry, xcolor}
-\bibliographystyle{plain}
-\nobibliography{references.bib}
-
-\definecolor{lightgray}{gray}{0.8}
-\newcolumntype{L}{>{\raggedleft}p{0.05\textwidth}}
-\newcolumntype{R}{p{0.9\textwidth}}
-\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\usepackage{xpatch}% or use http://tex.stackexchange.com/a/40705
-%
-%\makeatletter
-%\newbibmacro*{name:bold}[2]{%
-%	\edef\blx@tmp@name{\expandonce#1, \expandonce#2}%
-%	\def\do##1{\ifdefstring{\blx@tmp@name}{##1}{\bfseries\listbreak}{}}%
-%	\dolistloop{\boldnames}}
-%\newcommand*{\boldnames}{}
-%\makeatother
-%
-%\xpretobibmacro{name:family}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
-%\xpretobibmacro{name:given-family}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
-%\xpretobibmacro{name:family-given}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
-%\xpretobibmacro{name:delim}{\begingroup\normalfont}{}{}
-%
-%\xapptobibmacro{name:family}{\endgroup}{}{}
-%\xapptobibmacro{name:given-family}{\endgroup}{}{}
-%\xapptobibmacro{name:family-given}{\endgroup}{}{}
-%\xapptobibmacro{name:delim}{\endgroup}{}{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Curriculum Vitae}
-\author{Malcolm White}
-\date{11 January 2019}
-
-\name{Malcolm C. A. White}
-\address{50 Oakland St., Floor 2, Medford, MA 02155}
-\phone{(339) 221-7195}
-\email{malcolm.white@usc.edu}
-%\addbibresource{references.bib}
+\input{preamble.tex}
+\input{header.tex}
 
 \begin{document}
 	
@@ -53,9 +7,9 @@
 	\input{personal_statement.tex}
 	\input{technical_strengths.tex}
 	\input{education.tex}
-	\input{employment.tex}
+	\input{employment.tex}	
 	\input{teaching.tex}
-	\input{societies.tex}
 	\input{publications.tex}
+	\input{societies.tex}
 	
 \end{document}

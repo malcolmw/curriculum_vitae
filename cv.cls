@@ -8,12 +8,14 @@
 \def \address#1 {\def\@address{#1}}
 \def \phone#1   {\def\@phone{#1}}
 \def \email#1   {\def\@email{#1}}
+\def \homepage#1 {\def\@homepage{#1}}
 
 \def\namesize{\huge}
 \def \@name     {}
 \def \@address  {}
 \def \@phone    {}
 \def \@email    {}
+\def \@homepage {}
 
 \def \printDocumentHeader {
     \begin{center}
@@ -22,6 +24,8 @@
         \@address
         \smallskip \break
         \@phone\ $\diamond$ \@email
+        \smallskip \break
+        \@homepage
     \end{center}  
 }
 
