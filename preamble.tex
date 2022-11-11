@@ -1,9 +1,8 @@
 \documentclass{cv}
 
-\usepackage[style=authoryear]{biblatex}
 \usepackage{booktabs}
 \usepackage{enumitem}
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry} % Document margins
 \usepackage[utf8]{inputenc}
 \usepackage{longtable}
 \usepackage{siunitx}
@@ -12,38 +11,8 @@
 \usepackage{xcolor}
 
 \newenvironment{timeline}{
-	\begin{longtable}{p{0.045\textwidth}! {\color{black!20}\vrule} p{0.8875\textwidth}}
+	\begin{longtable}{p{0.15\textwidth}! {\color{black!20}\vrule} p{0.825\textwidth}}
 }
 {
 	\end{longtable}
 }
-
-
-\addbibresource{references.bib}
-%\usepackage[
-%    backend=biber,
-%    maxnames=99,
-%    style=authoryear
-%]{biblatex}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\usepackage{xpatch}% or use http://tex.stackexchange.com/a/40705
-%
-%\makeatletter
-%\newbibmacro*{name:bold}[2]{%
-%  \edef\blx@tmp@name{\expandonce#1, \expandonce#2}%
-%  \def\do##1{\ifdefstring{\blx@tmp@name}{##1}{\bfseries\listbreak}{}}%
-%  \dolistloop{\boldnames}}
-%\newcommand*{\boldnames}{}
-%\makeatother
-%
-%\xpretobibmacro{name:family}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
-%\xpretobibmacro{name:given-family}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
-%\xpretobibmacro{name:family-given}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
-%\xpretobibmacro{name:delim}{\begingroup\normalfont}{}{}
-%
-%\xapptobibmacro{name:family}{\endgroup}{}{}
-%\xapptobibmacro{name:given-family}{\endgroup}{}{}
-%\xapptobibmacro{name:family-given}{\endgroup}{}{}
-%\xapptobibmacro{name:delim}{\endgroup}{}{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

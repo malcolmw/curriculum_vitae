@@ -1,5 +1,5 @@
 \ProvidesClass{cv}[2011/01/11 v0.0 CV class]
-\LoadClass[11pt,letterpaper]{article}
+\LoadClass[12pt,letterpaper]{article}
 \pagestyle{empty}
 
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
